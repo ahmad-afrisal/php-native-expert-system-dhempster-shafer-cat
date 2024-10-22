@@ -1,0 +1,93 @@
+// Data penyakit (nama)
+$penyakit = [
+    'P1' => 'Scabies',
+    'P2' => 'Virus Panleukopenia',
+    'P3' => 'FLUTD',
+    'P4' => 'Calicivirus',
+    'P5' => 'Radang mata'
+];
+
+// Data penyakit (nama)
+$penyakit = [
+    'G01' => 'Scabies',
+    'G02' => 'Virus Panleukopenia',
+    'G03' => 'FLUTD',
+    'G04' => 'Calicivirus',
+    'G05' => 'Radang mata'
+];
+
+
+
+// Data nilai gejala untuk setiap penyakit
+$nilai_gejala = [
+    'P1' => [
+        'G01' => 0.2,
+        'G02' => 0.2,
+        'G03' => 0.2,
+        'G04' => 0.2,
+        'G05' => 0.2
+    ],
+    'P2' => [
+        'G03' => 0.2,
+        'G06' => 0.2,
+        'G07' => 0.2,
+        'G08' => 0.2,
+        'G09' => 0.2
+    ],
+    'P3' => [
+        'G03' => 0.2,
+        'G07' => 0.2,
+        'G10' => 0.2,
+        'G11' => 0.2,
+        'G12' => 0.2
+    ],
+    'P4' => [
+        'G03' => 0.2,
+        'G06' => 0.2,
+        'G09' => 0.2,
+        'G13' => 0.2,
+        'G14' => 0.2
+    ],
+    'P5' => [
+        'G15' => 0.333,
+        'G16' => 0.333,
+        'G17' => 0.333
+    ]
+];
+
+
+
+// Data relasi penyakit dan gejala
+$relasi = [
+    'P1' => ['G01', 'G02', 'G03', 'G04', 'G05'],
+    'P2' => ['G03', 'G06', 'G07', 'G08', 'G09'],
+    'P3' => ['G03', 'G07', 'G10', 'G11', 'G12'],
+    'P4' => ['G03', 'G06', 'G09', 'G13', 'G14'],
+    'P5' => ['G15', 'G16', 'G17']
+]
+
+// Data fungsi densitas (gejala dan penyakit)
+$fungsi_densitas = [
+    'G01' => ['P1'],
+    'G02' => ['P1'],
+    'G03' => ['P1', 'P2', 'P3', 'P4'],
+    'G04' => ['P1'],
+    'G05' => ['P1'],
+    'G06' => ['P2', 'P4'],
+    'G07' => ['P2', 'P3'],
+    'G08' => ['P2'],
+    'G09' => ['P2', 'P4'],
+    'G10' => ['P3'],
+    'G11' => ['P3'],
+    'G12' => ['P3'],
+    'G13' => ['P4'],
+    'G14' => ['P4'],
+    'G15' => ['P5'],
+    'G16' => ['P5'],
+    'G17' => ['P5']
+];
+
+
+
+file hitung copy datanya manual
+termasuk
